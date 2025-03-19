@@ -1,0 +1,392 @@
+[
+    {
+        "id": 2,
+        "url": "/assets/Homepage/image-gallery/gallery-image (23).webp",
+        "title": "Campus Tour and Welcome",
+        "description": "Guided tour for new students showcasing key campus areas, followed by a welcome session with university representatives."
+    },
+    {
+        "id": 3,
+        "url": "/assets/Homepage/image-gallery/gallery-image (56).webp",
+        "title": "Study Abroad Fair",
+        "description": "Event providing information on study abroad programs, exchange opportunities, and international partnerships."
+    },
+    {
+        "id": 4,
+        "url": "/assets/Homepage/image-gallery/gallery-image (22).webp",
+        "title": "Graduate Program Information Session",
+        "description": "Session detailing graduate programs, including admission requirements, research opportunities, and career prospects."
+    },
+    {
+        "id": 5,
+        "url": "/assets/Homepage/image-gallery/gallery-image (62).webp",
+        "title": "Scholarship Opportunities Workshop",
+        "description": "Workshop covering various scholarships, eligibility criteria, and tips on crafting successful applications."
+    },
+    {
+        "id": 6,
+        "url": "/assets/Homepage/image-gallery/gallery-image (63).webp",
+        "title": "Career Services Open Day",
+        "description": "Open day event offering insights into career services, job placement assistance, and internships for students."
+    },
+    {
+        "id": 7,
+        "url": "/assets/Homepage/image-gallery/gallery-image (40).webp",
+        "title": "Research Seminar Series",
+        "description": "A series of seminars featuring talks from faculty and researchers on current academic and industry research."
+    },
+    {
+        "id": 8,
+        "url": "/assets/Homepage/image-gallery/gallery-image (34).webp",
+        "title": "Language and Cultural Exchange Program",
+        "description": "Program promoting cultural exchange and language learning between international and domestic students."
+    },
+    {
+        "id": 9,
+        "url": "/assets/Homepage/image-gallery/gallery-image (61).webp",
+        "title": "Student Club Fair",
+        "description": "Fair showcasing various student clubs and organizations, encouraging new students to join and get involved."
+    },
+    {
+        "id": 10,
+        "url": "/assets/Homepage/image-gallery/gallery-image (2).webp",
+        "title": "Academic Advising Session",
+        "description": "One-on-one advising sessions helping students plan their academic journey, select courses, and understand degree requirements."
+    },
+    {
+        "id": 11,
+        "url": "/assets/Homepage/image-gallery/gallery-image (42).webp",
+        "title": "12 Years of Success Celebration",
+        "description": "Celebration event marking 12 years of academic achievements and student success at the University of Aberdeen."
+    },
+    {
+        "id": 12,
+        "url": "/assets/Homepage/image-gallery/gallery-image (1).webp",
+        "title": "Global Alumni Meet",
+        "description": "Event bringing together alumni from around the world to network, share experiences, and celebrate achievements."
+    },
+    {
+        "id": 13,
+        "url": "/assets/Homepage/image-gallery/gallery-image (3).webp",
+        "title": "Graduate Job Fair",
+        "description": "Job fair featuring companies offering graduate positions and internships, tailored to recent university graduates."
+    },
+    {
+        "id": 16,
+        "url": "/assets/Homepage/image-gallery/gallery-image (5).webp",
+        "title": "Faculty Research Symposium",
+        "description": "Symposium showcasing faculty research projects, with presentations and discussions on recent academic findings."
+    },
+    {
+        "id": 17,
+        "url": "/assets/Homepage/image-gallery/gallery-image (4).webp",
+        "title": "Graduate School Open House",
+        "description": "Open house event for prospective graduate students to explore programs, meet faculty, and tour facilities."
+    },
+    {
+        "id": 19,
+        "url": "/assets/Homepage/image-gallery/gallery-image (6).webp",
+        "title": "International Education Week",
+        "description": "Week-long event celebrating international education with workshops, cultural performances, and information sessions."
+    },
+    {
+        "id": 20,
+        "url": "/assets/Homepage/image-gallery/gallery-image (58).webp",
+        "title": "Study Skills Workshop",
+        "description": "Workshop focused on teaching effective study habits, time management, and exam preparation techniques."
+    },
+    {
+        "id": 21,
+        "url": "/assets/Homepage/image-gallery/gallery-image (58).webp",
+        "title": "Entrepreneurship and Innovation Forum",
+        "description": "Forum bringing together students, faculty, and industry leaders to discuss entrepreneurship and innovative business ideas."
+    },
+    {
+        "id": 22,
+        "url": "/assets/Homepage/image-gallery/gallery-image (46).webp",
+        "title": "Library Resources Orientation",
+        "description": "Orientation session introducing students to library resources, research tools, and academic databases."
+    },
+    {
+        "id": 23,
+        "url": "/assets/Homepage/image-gallery/gallery-image (43).webp",
+        "title": "Digital Learning Workshop",
+        "description": "Workshop on digital learning tools and platforms, helping students enhance their online learning experience."
+    },
+    {
+        "id": 24,
+        "url": "/assets/Homepage/image-gallery/gallery-image (52).webp",
+        "title": "Research Funding Opportunities",
+        "description": "Session covering various research funding opportunities, grant applications, and financial support for student projects."
+    },
+    {
+        "id": 25,
+        "url": "/assets/Homepage/image-gallery/gallery-image (44).webp",
+        "title": "Mental Health and Wellness Seminar",
+        "description": "Seminar addressing mental health, wellness, and support resources available to students on campus."
+    },
+    {
+        "id": 26,
+        "url": "/assets/Homepage/image-gallery/gallery-image (49).webp",
+        "title": "Leadership Development Workshop",
+        "description": "Workshop focused on developing leadership skills, team building, and effective communication for future leaders."
+    },
+    {
+        "id": 27,
+        "url": "/assets/Homepage/image-gallery/gallery-image (53).webp",
+        "title": "Postgraduate Research Conference",
+        "description": "Conference for postgraduate students to present research, network with peers, and receive feedback from experts."
+    },
+    {
+        "id": 28,
+        "url": "/assets/Homepage/image-gallery/gallery-image (50).webp",
+        "title": "Faculty and Student Networking Event",
+        "description": "Networking event connecting students with faculty, promoting collaboration on academic projects and research."
+    },
+    {
+        "id": 29,
+        "url": "/assets/Homepage/image-gallery/gallery-image (51).webp",
+        "title": "Online Learning Resources Workshop",
+        "description": "Workshop offering guidance on utilizing online learning resources, tools, and platforms effectively."
+    },
+    {
+        "id": 30,
+        "url": "/assets/Homepage/image-gallery/gallery-image (41).webp",
+        "title": "International Student Social",
+        "description": "Social event aimed at helping international students build connections, socialize, and integrate into campus life."
+    },
+    {
+        "id": 31,
+        "url": "/assets/Homepage/image-gallery/gallery-image (31).webp",
+        "title": "Thesis Writing Workshop",
+        "description": "Workshop providing tips and strategies for writing a successful thesis, from research to final submission."
+    },
+    {
+        "id": 32,
+        "url": "/assets/Homepage/image-gallery/gallery-image (30).webp",
+        "title": "Student-Led Conference",
+        "description": "Conference organized by students, featuring panels, presentations, and discussions on current academic topics."
+    },
+    {
+        "id": 33,
+        "url": "/assets/Homepage/image-gallery/gallery-image (33).webp",
+        "title": "Alumni Career Mentorship Program",
+        "description": "Program connecting current students with alumni for career advice, mentorship, and networking opportunities."
+    },
+    {
+        "id": 34,
+        "url": "/assets/Homepage/image-gallery/gallery-image (59).webp",
+        "title": "Entrepreneurial Bootcamp",
+        "description": "Intensive bootcamp focused on developing entrepreneurial skills, business planning, and startup creation."
+    },
+    {
+        "id": 35,
+        "url": "/assets/Homepage/image-gallery/gallery-image (32).webp",
+        "title": "Community Engagement Workshop",
+        "description": "Workshop promoting community engagement and social responsibility through student-led initiatives and projects."
+    },
+    {
+        "id": 36,
+        "url": "/assets/Homepage/image-gallery/gallery-image (60).webp",
+        "title": "International Student Mixer",
+        "description": "Mixer event for international students to network, socialize, and build a supportive community on campus."
+    },
+    {
+        "id": 37,
+        "url": "/assets/Homepage/image-gallery/gallery-image (18).webp",
+        "title": "Sustainability Initiatives Fair",
+        "description": "Fair showcasing campus sustainability initiatives, promoting eco-friendly practices and student involvement."
+    },
+    {
+        "id": 38,
+        "url": "/assets/Homepage/image-gallery/gallery-image (20).webp",
+        "title": "Financial Literacy Workshop",
+        "description": "Workshop teaching students essential financial literacy skills, including budgeting, investing, and managing student loans."
+    },
+    {
+        "id": 39,
+        "url": "/assets/Homepage/image-gallery/gallery-image (16).webp",
+        "title": "Public Speaking Workshop",
+        "description": "Workshop aimed at improving students' public speaking and presentation skills through practice and feedback."
+    },
+    {
+        "id": 40,
+        "url": "/assets/Homepage/image-gallery/gallery-image (54).webp",
+        "title": "Cultural Heritage Festival",
+        "description": "Festival celebrating diverse cultural heritages on campus, featuring performances, food, and interactive exhibits."
+    },
+    {
+        "id": 41,
+        "url": "/assets/Homepage/image-gallery/gallery-image (17).webp",
+        "title": "Student Leadership Awards",
+        "description": "Awards ceremony recognizing outstanding student leaders for their contributions to the university community."
+    },
+    {
+        "id": 42,
+        "url": "/assets/Homepage/image-gallery/gallery-image (13).webp",
+        "title": "Graduate School Application Workshop",
+        "description": "Workshop guiding students through the graduate school application process, including tips on writing a strong statement of purpose."
+    },
+    {
+        "id": 43,
+        "url": "/assets/Homepage/image-gallery/gallery-image (47).webp",
+        "title": "International Research Collaboration Symposium",
+        "description": "Symposium focused on fostering international research collaborations between universities and research institutions."
+    },
+    {
+        "id": 44,
+        "url": "/assets/Homepage/image-gallery/gallery-image (57).webp",
+        "title": "Diversity and Inclusion Workshop",
+        "description": "Workshop promoting diversity and inclusion on campus, with discussions on creating a welcoming environment for all students."
+    },
+    {
+        "id": 45,
+        "url": "/assets/Homepage/image-gallery/gallery-image (10).webp",
+        "title": "Faculty and Student Collaboration Fair",
+        "description": "Fair encouraging collaboration between faculty and students on research projects, academic initiatives, and creative works."
+    },
+    {
+        "id": 46,
+        "url": "/assets/Homepage/image-gallery/gallery-image (37).webp",
+        "title": "Environmental Science Lecture Series",
+        "description": "Lecture series featuring talks from environmental science experts on current issues, research, and sustainable solutions."
+    },
+    {
+        "id": 47,
+        "url": "/assets/Homepage/image-gallery/gallery-image (38).webp",
+        "title": "Innovation and Technology Expo",
+        "description": "Expo showcasing cutting-edge innovations, technology projects, and student-led startups in various fields."
+    },
+    {
+        "id": 48,
+        "url": "/assets/Homepage/image-gallery/gallery-image (11).webp",
+        "title": "Student Exchange Program Info Session",
+        "description": "Information session about student exchange programs, providing details on partner institutions and application processes."
+    },
+    {
+        "id": 49,
+        "url": "/assets/Homepage/image-gallery/gallery-image (9).webp",
+        "title": "Postgraduate Research Symposium",
+        "description": "Symposium for postgraduate students to present their research, receive feedback, and connect with peers and faculty."
+    },
+    {
+        "id": 50,
+        "url": "/assets/Homepage/image-gallery/gallery-image (24).webp",
+        "title": "International Student Welcome Dinner",
+        "description": "Welcome dinner for international students, providing an opportunity to meet peers, faculty, and university staff."
+    },
+    {
+        "id": 51,
+        "url": "/assets/Homepage/image-gallery/gallery-image (35).webp",
+        "title": "Study Abroad Information Session",
+        "description": "Information session on study abroad opportunities, covering program options, application processes, and financial aid."
+    },
+    {
+        "id": 52,
+        "url": "/assets/Homepage/image-gallery/gallery-image (36).webp",
+        "title": "Global Internship Fair",
+        "description": "Fair offering information on global internship opportunities, including application tips and success stories."
+    },
+    {
+        "id": 53,
+        "url": "/assets/Homepage/image-gallery/gallery-image (12).webp",
+        "title": "CEO Guest Lecture at Oxford",
+        "description": "Guest lecture by a prominent CEO at Oxford, discussing leadership, innovation, and the future of business."
+    },
+    {
+        "id": 54,
+        "url": "/assets/Homepage/image-gallery/gallery-image (8).webp",
+        "title": "University Representative Office Visit",
+        "description": "Visit from a university representative to discuss partnership opportunities, student recruitment, and academic collaborations."
+    },
+    {
+        "id": 55,
+        "url": "/assets/Homepage/image-gallery/gallery-image (48).webp",
+        "title": "Faculty-Led Study Tour Info Session",
+        "description": "Session on faculty-led study tours, offering students the chance to travel and learn from experts in the field."
+    },
+    {
+        "id": 56,
+        "url": "/assets/Homepage/image-gallery/gallery-image (25).webp",
+        "title": "Entrepreneurship Workshop Series",
+        "description": "Series of workshops focused on entrepreneurship, covering topics like business planning, pitching, and startup funding."
+    },
+    {
+        "id": 57,
+        "url": "/assets/Homepage/image-gallery/gallery-image (19).webp",
+        "title": "Health and Wellness Expo",
+        "description": "Expo promoting health and wellness on campus, with resources, activities, and information for students."
+    },
+    {
+        "id": 58,
+        "url": "/assets/Homepage/image-gallery/gallery-image (39).webp",
+        "title": "Student Innovation Challenge",
+        "description": "Challenge encouraging students to develop innovative solutions to real-world problems, with prizes for winning ideas."
+    },
+    {
+        "id": 59,
+        "url": "/assets/Homepage/image-gallery/gallery-image (14).webp",
+        "title": "Global Education Symposium",
+        "description": "Symposium focused on global education trends, international partnerships, and the future of higher education."
+    },
+    {
+        "id": 60,
+        "url": "/assets/Homepage/image-gallery/gallery-image (45).webp",
+        "title": "University Open Day",
+        "description": "Open day event for prospective students and parents to tour the campus, meet faculty, and learn about academic programs."
+    },
+    {
+        "id": 61,
+        "url": "/assets/Homepage/image-gallery/gallery-image (21).webp",
+        "title": "Student-Led Workshop on Social Justice",
+        "description": "Workshop led by students on social justice issues, encouraging discussion and activism within the university community."
+    },
+    {
+        "id": 62,
+        "url": "/assets/Homepage/image-gallery/gallery-image (26).webp",
+        "title": "Campus Sustainability Initiative",
+        "description": "University-wide sustainability initiative aimed at reducing carbon footprint and promoting environmental awareness."
+    },
+    {
+        "id": 63,
+        "url": "/assets/Homepage/image-gallery/gallery-image (27).webp",
+        "title": "Research Symposium",
+        "description": "Annual research symposium showcasing innovative student and faculty research across disciplines."
+    },
+    {
+        "id": 64,
+        "url": "/assets/Homepage/image-gallery/gallery-image (28).webp",
+        "title": "Cultural Festival",
+        "description": "A vibrant cultural festival featuring performances, food, and traditions from diverse student groups."
+    },
+    {
+        "id": 65,
+        "url": "/assets/Homepage/image-gallery/gallery-image (29).webp",
+        "title": "Career Development Workshop",
+        "description": "Workshop focused on resume building, interview techniques, and networking opportunities for students."
+    },
+    {
+        "id": 66,
+        "url": "/assets/Homepage/image-gallery/gallery-image (32).webp",
+        "title": "Alumni Networking Event",
+        "description": "An alumni networking event that connects students with successful graduates working in various industries."
+    },
+    {
+        "id": 67,
+        "url": "/assets/Homepage/image-gallery/gallery-image (33).webp",
+        "title": "Art Exhibition",
+        "description": "An exhibition of student and faculty artwork, celebrating creativity and innovation in visual arts."
+    },
+    {
+        "id": 68,
+        "url": "/assets/Homepage/image-gallery/gallery-image (30).webp",
+        "title": "Sports Day",
+        "description": "Annual university sports day featuring various athletic competitions, games, and team-building activities."
+    },
+    {
+        "id": 69,
+        "url": "/assets/Homepage/image-gallery/gallery-image (31).webp",
+        "title": "Guest Lecture Series",
+        "description": "Lecture series featuring prominent speakers from academia, industry, and the arts sharing insights on current topics."
+    }
+]

@@ -1,0 +1,201 @@
+[
+  {
+    "_id": "67bdd7eb43b2a5e5a652c0b8",
+    "country": "United Kingdom",
+    "__v": 3,
+    "createdAt": "2025-02-25T14:47:09.515Z",
+    "offices": [
+      {
+        "_id": "67bdd7ed8a702630096a2362",
+        "city": "London (Head Office)",
+        "address": "1st Floor, 94A Whitechapel High Street London E1 7RA",
+        "phone": "+1-987-654-3212",
+        "email": "info@shabujglobal.com",
+        "timestamps": [
+          "2025-02-25T14:47:09.514Z",
+          "2025-02-25T15:30:25.296Z",
+          "2025-02-25T15:30:38.614Z",
+          "2025-02-25T15:30:45.658Z"
+        ]
+      }
+    ],
+    "updatedAt": "2025-02-25T15:35:20.206Z"
+  },
+  {
+    "_id": "67bde5cf43b2a5e5a652c146",
+    "country": "Bangladesh",
+    "__v": 0,
+    "createdAt": "2025-02-25T15:46:25.797Z",
+    "offices": [
+      {
+        "_id": "67bde5d1c0eabf8e08f160c8",
+        "city": "Banani, Dhaka",
+        "address": "Nagar Lutfun Homes, House # 11, Road # 17, Block # D, Banani 1213",
+        "phone": "+8801321182535, +8801321182538",
+        "email": "applications.bd@shabujglobal.com",
+        "timestamps": ["2025-02-25T15:46:25.797Z"]
+      },
+      {
+        "_id": "67bde5d8c0eabf8e08f160cc",
+        "city": "Dhanmondi",
+        "address": "759, Delvista Fuljhuri(Lift-5) Satmosjid Road, Dhanmondi, Dhaka-1207",
+        "phone": "+8801321182527, +8801321182525",
+        "email": "internationaladvice@shabujglobal.com",
+        "timestamps": ["2025-02-25T15:46:32.650Z"]
+      },
+      {
+        "_id": "67bde5dfc0eabf8e08f160d1",
+        "city": "Chattogram",
+        "address": "R I Tower (level 3), 23/A MM Ali Road, Golpahar Mor, Chattogram 4225",
+        "phone": "+8801321182544, +8801321182520",
+        "email": "applications.ctg@shabujglobal.com",
+        "timestamps": ["2025-02-25T15:46:39.388Z"]
+      },
+      {
+        "_id": "67bde5e6c0eabf8e08f160d7",
+        "city": "Sylhet",
+        "address": "Symphony Heights (3rd Floor), Baruth Khana, East Zindabazar, Sylhet 3100",
+        "phone": "+8801324430312, +8801321182528",
+        "email": "admissions@shabujglobal.com",
+        "timestamps": ["2025-02-25T15:46:46.675Z"]
+      }
+    ],
+    "updatedAt": "2025-02-25T15:46:46.675Z"
+  },
+  {
+    "_id": "67bde59643b2a5e5a652c142",
+    "country": "India",
+    "__v": 0,
+    "createdAt": "2025-02-25T15:45:28.847Z",
+    "offices": [
+      {
+        "_id": "67bde598c0eabf8e08f160b6",
+        "city": "Kannur",
+        "address": "Daliya Archade, 4th floor, NCC Road, Thalassery, Pilakool, Thalassery, Kerala 670101.",
+        "phone": "00918129255564",
+        "email": "india@shabujglobal.com",
+        "timestamps": ["2025-02-25T15:45:28.846Z"]
+      },
+      {
+        "_id": "67bde5a4c0eabf8e08f160ba",
+        "city": "Kochin",
+        "address": "Shabuj Global Kochin, Door Number: 303, 3rd Floor, Cityscape, South Kalamassery, Kochi-Kerala, 682033.",
+        "phone": "00918129255564",
+        "email": "india@shabujglobal.com",
+        "timestamps": ["2025-02-25T15:45:40.773Z"]
+      }
+    ],
+    "updatedAt": "2025-02-25T15:45:40.773Z"
+  },
+  {
+    "_id": "67bde5b643b2a5e5a652c145",
+    "country": "Nigeria",
+    "__v": 0,
+    "createdAt": "2025-02-25T15:46:00.942Z",
+    "offices": [
+      {
+        "_id": "67bde5b8c0eabf8e08f160bf",
+        "city": "Lagos",
+        "address": "57, Bode Thomas Street, Surulere.",
+        "phone": "09065327323, 07048293093",
+        "email": "africa@shabujglobal.com, applications.nigeria@shabujglobal.com",
+        "timestamps": ["2025-02-25T15:46:00.942Z"]
+      },
+      {
+        "_id": "67bde5c3c0eabf8e08f160c3",
+        "city": "Abuja",
+        "address": "No.9 Senangal Crescent, Wuse Zone 5, Abuja, Nigeria.",
+        "phone": "+2349033173017",
+        "email": "africa@shabujglobal.com",
+        "timestamps": ["2025-02-25T15:46:11.958Z"]
+      }
+    ],
+    "updatedAt": "2025-02-25T15:46:11.958Z"
+  },
+  {
+    "_id": "67bde5f143b2a5e5a652c148",
+    "country": "Nepal",
+    "__v": 0,
+    "createdAt": "2025-02-25T15:46:59.247Z",
+    "offices": [
+      {
+        "_id": "67bde5f3c0eabf8e08f160de",
+        "city": "Kathmandu",
+        "address": "3rd Floor, Putalisadak, रामशाह पथ, Kathmandu 44600",
+        "phone": "00447903108549",
+        "email": "applications.nepal@shabujglobal.com",
+        "timestamps": ["2025-02-25T15:46:59.246Z"]
+      }
+    ],
+    "updatedAt": "2025-02-25T15:46:59.247Z"
+  },
+  {
+    "_id": "67bde5fc43b2a5e5a652c149",
+    "country": "Middle East",
+    "__v": 0,
+    "createdAt": "2025-02-25T15:47:10.693Z",
+    "offices": [
+      {
+        "_id": "67bde5fec0eabf8e08f160e2",
+        "city": "Dubai",
+        "address": "Shabuj Global Education, Dubai Silicon Oasis, Dubai Digital Park - Dubai (Near to Dubai Academic City)- United Arab Emirates",
+        "timestamps": ["2025-02-25T15:47:10.692Z"]
+      },
+      {
+        "_id": "67bde617c0eabf8e08f160e6",
+        "city": "Saudi Arabia",
+        "address": "247/3 King Fahad Road, Saudi Arabia",
+        "timestamps": ["2025-02-25T15:47:35.918Z"]
+      }
+    ],
+    "updatedAt": "2025-02-25T15:47:10.693Z"
+  },
+  {
+    "_id": "67bde5fc43b2a5e5a652c149",
+    "country": "African Region",
+    "__v": 0,
+    "createdAt": "2025-02-25T15:47:10.693Z",
+    "offices": [
+      {
+        "_id": "67bde5fec0eabf8e08f160e2",
+        "city": "Cameroon",
+        "address": "Mr Imanuel",
+        "phone": "admissions.cameroon@shabujglobal.africa",
+        "timestamps": ["2025-02-25T15:47:10.692Z"]
+      },
+      {
+        "_id": "67bde617c0eabf8e08f160e6",
+        "city": "Ghana",
+        "address": "Cecilia Godzeal",
+        "email": "admissions.ghana@shabujglobal.africa",
+        "phone": "+ 233595220126",
+        "timestamps": ["2025-02-25T15:47:35.918Z"]
+      },
+      {
+        "_id": "67bde617c0eabf8e08f160e6",
+        "city": "Kenya",
+        "address": "Diana Wanjiru",
+        "email": " east.africa@shabujglobal.africa",
+        "phone": "+254702833720",
+        "timestamps": ["2025-02-25T15:47:35.918Z"]
+      }
+    ],
+    "updatedAt": "2025-02-25T15:47:10.693Z"
+  },
+  {
+    "_id": "67bde5fc43b2a5e5a652c149",
+    "country": "Pakistan",
+    "__v": 0,
+    "createdAt": "2025-02-25T15:47:10.693Z",
+    "offices": [
+      {
+        "_id": "67bde617c0eabf8e08f160e6",
+        "city": "Lahore",
+        "address": "Sajjal Rahmeen",
+        "phone": "admissions.pak@shabujglobal.org",
+        "timestamps": ["2025-02-25T15:47:35.918Z"]
+      }
+    ],
+    "updatedAt": "2025-02-25T15:47:10.693Z"
+  }
+]

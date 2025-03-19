@@ -1,0 +1,50 @@
+/* Container for images */
+.counselor-image-container {
+  position: relative;
+  width: 534px;
+  height: 636px;
+}
+
+/* Default image */
+.counselor-image-container .default-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover image (hidden by default) */
+.counselor-image-container .hover-image {
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out; 
+}
+
+/* On hover, hide the default image and show the hover image */
+
+.counselor-image-container:hover .hover-image {
+  opacity: 1;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 640px) {
+  .counselor-image-container {
+    width: 353px;
+    height: 353px; /* Ensure it stays square for smaller screens */
+  }
+
+  .counselor-image-container .default-image,
+  .counselor-image-container .hover-image {
+    width: 100%; /* Adjust to container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

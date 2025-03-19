@@ -1,0 +1,100 @@
+{
+    "United Kingdom": {
+      "title": "United Kingdom",
+      "offices": [
+        {
+          "city": "London (Head Office)",
+          "address": "1st Floor, 94A Whitechapel High Street London E1 7RA",
+          "phone": "+447404016346"
+        }
+      ]
+    },
+    "India": {
+      "title": "India",
+      "offices": [
+        {
+          "city": "Kannur",
+          "address": "Daliya Archade, 4th floor, NCC Road, Thalassery, Pilakool, Thalassery, Kerala 670101.",
+          "phone": "00918129255564",
+          "email": "india@shabujglobal.com"
+        },
+        {
+          "city": "Kochin",
+          "address": "Shabuj Global Kochin, Door Number: 303,3rd Floor, Cityscape,South Kalamasery",
+          "email": "india@shabujglobal.com"
+        }
+      ]
+    },
+    "Nigeria": {
+      "title": "Nigeria",
+      "offices": [
+        {
+          "city": "Lagos",
+          "address": "57, Bode Thomas Street, Surulere.",
+          "email": "africa@shabujglobal.com, applications.nigeria@shabujglobal.com"
+        },
+        {
+          "city": "Abuja",
+          "address": "No.9 Senangal Crescent, Wuse Zone 5, Abuja, Nigeria.",
+          "email": "africa@shabujglobal.com"
+        }
+      ]
+    },
+    "Bangladesh": {
+      "title": "Bangladesh",
+      "offices": [
+        {
+          "city": "Banani, Dhaka",
+          "address": "Nagar Lutfun Homes, House # 11, Road # 17, Block # D, Banani 1213",
+          "phone": "+8801321182535, +8801321182538",
+          "email": "applications.bd@shabujglobal.com"
+        },
+        {
+          "city": "Dhanmondi Branch, Dhaka",
+          "address": "759, Delvista Fuljhuri(Lift-5) Satmosjid Road, Dhanmondi, Dhaka-1207",
+          "phone": "+8801321182527",
+          "email": "internationaladvice@shabujglobal.com"
+        },
+        {
+          "city": "Chattogram Branch",
+          "address": "R I Tower (level 3), 23/A MM Ali Road, Golpahar Mor, Chattogram 4225",
+          "phone": "+8801321182544"
+        },
+        {
+          "city": "Sylhet Branch",
+          "address": "Symphony Heights (3rd Floor), Baruth Khana, East Zindabazar, Sylhet 3100",
+          "phone": "+8801324430312, +8801321182528"
+        }
+      ]
+    },
+    "Nepal": {
+      "title": "Nepal",
+      "offices": [
+        {
+          "city": "Kathmandu",
+          "address": "3rd Floor, Putalisadak, रामशाह पथ, Kathmandu 44600",
+          "phone": "00447903108549",
+          "email": "applications.nepal@shabujglobal.com"
+        }
+      ]
+    },
+    "Dubai": {
+      "title": "UAE",
+      "offices": [
+        {
+          "city": "Dubai",
+          "address": "Shabuj Global Education, Dubai Silicon Oasis, Dubai Digital Park - Dubai (Near to Dubai Academic City)- United Arab Emirates"
+        }
+      ]
+    },
+    "Saudi Arabia": {
+      "title": "Saudi Arabia",
+      "offices": [
+        {
+          "city": "Saudi Arabia",
+          "address": "247/3 King Fahad Road, Saudi Arabia"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,131 @@
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+
+  
+  .layer1 {
+    z-index: 1;
+    /* animation: moveRight 2s infinite linear; */
+  }
+  
+  .layer1 img{
+    height: 650px;
+  }
+  
+  .layer2 {
+    z-index: 1;
+    /* animation: moveLeft 2s infinite linear; */
+  }
+
+  .layer2 img{
+    height: 650px;
+  }
+  
+  .layer3 {
+    z-index: 3;
+    bottom: 0;
+    height: 650px;
+    top: 20%;
+    margin-bottom: -100px;
+    /* animation: moveUp 10s infinite linear; */
+  }
+  .layer3 img{
+    height: 540px;
+  }
+  
+  .layer4 {
+    z-index: 4;
+    top: 30%;
+  }
+
+  .layer4 img{
+    height: 500px;
+  }
+.layer5{
+    z-index: 5;
+    top: 60%;
+    /* animation: moveUp 7s infinite ease-in-out; */
+}
+.layer5 img{
+    height: 350px;
+}
+
+.layer6{
+    z-index: 6;
+    top: 10%;
+    /* animation: moveTextUp 6s infinite ease-in-out; */
+}
+
+.canadaleaf{
+  z-index: 0;
+  /* animation:leafgrow 3s infinite ease-in-out ; */
+}
+
+.transiton{
+  opacity: 1;
+  transition: all 3s ease-in-out;
+}
+
+@keyframes moveRight {
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(10%);
+  }
+}
+@keyframes moveLeft {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-10%);
+  }
+}
+@keyframes moveUp {
+  0%{
+    transform: translateY(3%);
+    opacity: 100%;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 90%;
+  }
+}
+@keyframes moveTextUp {
+  0%{
+    transform: translateY(30%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+@keyframes leafgrow {
+  0%{
+    height: 100px;
+    transition: height ease-in;
+    z-index: 0;
+  }
+  100%{
+    height: 120px;
+    top: 0px;
+    left: 0px;
+    transition: height ease-in;
+    z-index: 0;
+  }
+}
+  

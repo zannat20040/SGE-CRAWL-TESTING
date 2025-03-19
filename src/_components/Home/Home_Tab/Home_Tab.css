@@ -1,0 +1,75 @@
+.tabs-area {
+    
+    position: relative;
+}
+
+.tabs-area:before {
+    position: absolute;
+    content: "";
+    width: 755px;
+    height: 60px;
+    top: 45px;
+    left: 0;
+    margin: 0 auto;
+    bottom: 0;
+    background-color: white;
+    border: 2px solid #EEEEEE ;
+    right: 0;
+    border-radius: 80px;
+}
+
+.tabs-area .tab-content,
+.tabs-area .single-tab > input {
+    display: none;
+}
+
+.tabs-area .tab-btn {
+    --gap: 11px;
+    
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+}
+
+.tabs-area .single-tab:nth-child(1) .tab-btn {
+    left: auto;
+    right: 50%;
+    margin-right: var(--gap);
+}
+
+.tabs-area .single-tab:nth-child(2) .tab-btn {
+    margin-left: var(--gap);
+}
+
+
+
+.single-tab:has( > input:checked ) .tab-btn {
+    background: #004ACB;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.single-tab:has( > input:checked ) .tab-content {
+    display: block;
+}
+
+
+
+
+
+@media screen and (max-width : 768px) {
+    .tabs-area .tab-content {
+        display: block;
+    }
+    .div-inputs {
+        display: none;
+    }
+    .label{
+        display: none;
+    }
+    .tabs-area:before {
+        display: none;
+    }
+}

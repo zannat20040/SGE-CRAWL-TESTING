@@ -1,0 +1,48 @@
+
+@keyframes scale-animation {
+    0%,
+    100% {
+      transform: scale(1.5);
+      top: -105px;
+    }
+    50% {
+      transform: scale(2.5);
+      top: -130px;
+    }
+  }
+  
+  @keyframes scale-animation2 {
+    0%,
+    100% {
+      transform: scale(1.5);
+      top: -120px;
+    }
+    50% {
+      transform: scale(2.5);
+      top: -145px;
+    }
+  }
+  @keyframes scale-animation3 {
+    0%,
+    100% {
+      left: -20px;
+      bottom: -8px;
+      transform: rotate(20deg);
+    }
+    50% {
+      left: -53px;
+      bottom: -17px;
+      transform: rotate(-10deg);
+    }
+  }
+  
+  .statue3-animation {
+    animation: scale-animation 5s infinite;
+  }
+  .statue3-animation2 {
+    animation: scale-animation2 5s infinite;
+  }
+  .statue1-animation {
+    animation: scale-animation3 5s infinite;
+  }
+  

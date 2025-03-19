@@ -1,0 +1,84 @@
+@keyframes move-right {
+  0% {
+    transform: translateX(260px);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(260px);
+  }
+}
+
+@keyframes move-right1 {
+  0% {
+    transform: translateX(170px);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(170px);
+  }
+}
+@keyframes move-right2 {
+  0% {
+    transform: translateX(100px);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+.clip-white {
+  background-image: url("../../../../public/assets/Homepage/Hero-Section-Image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  /* Mask Image Fix */
+  mask-image: url("../../../../public/assets/Homepage/Half Shapes Updated/Shape-1.png");
+  -webkit-mask-image: url("../../../../public/assets/Homepage/Half Shapes Updated/Shape-1.png"); /* Safari Fix */
+
+  /* Ensures it covers the entire element */
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+
+  /* Prevents repetition */
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+
+  /* Positions the mask correctly */
+  mask-position: center;
+  -webkit-mask-position: center;
+  animation: move-right 5s ease-in-out infinite;
+}
+
+.clip-blue {
+  animation: move-right1 5s ease-in-out infinite;
+}
+.clip-paste {
+  animation: move-right2 5s ease-in-out infinite;
+}
