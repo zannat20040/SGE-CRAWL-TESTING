@@ -7,9 +7,9 @@ import Home_Connection from "@/_components/Home/Home_Connection/Home_Connection"
 import Home_Destination from "@/_components/Home/Home_Destination/Home_Destination";
 import Home_UniversityList from "@/_components/Home/Home_UniversityList/Home_Universitylist";
 import ImageGallery from "@/_components/Home/Home_ImageGallery/ImageGallery";
-// import Home_Contact from "@/_components/Home/Home_Contact/Home_Contact";
+import Home_Contact from "@/_components/Home/Home_Contact/Home_Contact";
 import WelcomeModal from "@/_components/Home/WelcomeModal/WelcomeModal";
-// import HomeVideoTestimonial from "@/_components/Home/Home_Testimonial/HomeVideoTestimonial";
+import HomeVideoTestimonial from "@/_components/Home/Home_Testimonial/HomeVideoTestimonial";
 import Link from "next/link";
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
       <Home_Events />
       <Home_Tab />
       <Home_Counter />
-      {/* <HomeVideoTestimonial /> */}
+      <HomeVideoTestimonial />
       <Home_Connection />
       <div
         style={{
@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <Home_UniversityList />
       <ImageGallery />
-      {/* <Home_Contact /> */}
+      <Home_Contact />
     </div>
   );
 }

@@ -7,14 +7,13 @@ const config: Config = withMT({
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/_components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {},
   },
   plugins: [
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    require("daisyui"),
+    require('daisyui'),
   ],
 });
 

@@ -1,6 +1,5 @@
 {
   "compilerOptions": { 
-  "noImplicitAny": false,
     "typeRoots": ["./node_modules/@types", "./src/types"],
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -24,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts"],
+"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts", "postcss.config.mjs"],
   "exclude": ["node_modules"]
 }
