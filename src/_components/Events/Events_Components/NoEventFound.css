@@ -1,0 +1,173 @@
+@keyframes moveUp {
+  0% {
+    top: -50px; /* Start at the bottom */
+  }
+  30% {
+    top: 20px;
+  }
+  70% {
+    top: 20px;
+  }
+  100% {
+    top: -50px; /* Move back down to the bottom */
+  }
+}
+.back-desk {
+  animation: moveUp 5s infinite; /* Apply the animation */
+}
+
+@keyframes slideLeft {
+  0% {
+    left: 450px; /* Start from 50% of the viewport width */
+  }
+  30% {
+    left: 0;
+  }
+  70% {
+    left: 0;
+  }
+  100% {
+    left: 450px; /* End at 50% of the viewport width */
+  }
+}
+.person {
+  animation: slideLeft 6s infinite; /* Apply the animation */
+}
+
+@keyframes slideRight {
+  0% {
+    right: 10rem; /* Start from 50% of the viewport width */
+  }
+  25% {
+    right: 10rem;
+  }
+  50% {
+    right: 7rem;
+  }
+  75% {
+    right: 7rem; /* End at 50% of the viewport width */
+  }
+  100% {
+    right: 10rem; /* End at 50% of the viewport width */
+  }
+}
+.person1 {
+  animation: slideRight 6s infinite; /* Apply the animation */
+}
+
+@keyframes person2lide {
+  0% {
+    left: 1rem; /* Start from 50% of the viewport width */
+  }
+  25% {
+    left: 0;
+  }
+  50% {
+    left: 0;
+  }
+  75% {
+    left: 0; /* End at 50% of the viewport width */
+  }
+  100% {
+    left: 1rem; /* End at 50% of the viewport width */
+  }
+}
+.person2 {
+  animation: person2lide 6s infinite; /* Apply the animation */
+}
+
+@keyframes comming-soon-animation {
+  0% {
+    transform: rotate(-15deg);
+  }
+  15% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  35% {
+    transform: rotate(-15deg) translateY(-28px);
+  }
+  60% {
+    transform: rotate(15deg) translateY(-28px);
+  }
+  65% {
+    transform: rotate(15deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(-15deg) translateY(0px); /* End at 50% of the viewport width */
+  }
+}
+.comming-soon {
+  animation: comming-soon-animation 7s infinite linear;
+}
+
+@media screen and (max-width: 1294px) {
+  @keyframes slideLeft {
+    0% {
+      left: 350px; /* Start from 50% of the viewport width */
+    }
+    30% {
+      left: 0;
+    }
+    70% {
+      left: 0;
+    }
+    100% {
+      left: 350px; /* End at 50% of the viewport width */
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  @keyframes moveUp {
+    0% {
+      top: -20px; /* Start above */
+    }
+    30% {
+      top: 50px; /* Move up */
+    }
+    70% {
+      top: 50px; /* Stay in place */
+    }
+    100% {
+      top: -20px; /* Move back to top */
+    }
+  }
+
+  @keyframes slideLeft {
+    0% {
+      left: 240px; /* Start from 50% of the viewport width */
+    }
+    30% {
+      left: 0;
+    }
+    70% {
+      left: 0;
+    }
+    100% {
+      left: 240px; /* End at 50% of the viewport width */
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  @keyframes slideRight {
+    0% {
+      right: 7rem; /* Start from 50% of the viewport width */
+    }
+    25% {
+      right: 7rem;
+    }
+    50% {
+      right: 5rem;
+    }
+    75% {
+      right: 5rem; /* End at 50% of the viewport width */
+    }
+    100% {
+      right: 7rem; /* End at 50% of the viewport width */
+    }
+  }
+}
