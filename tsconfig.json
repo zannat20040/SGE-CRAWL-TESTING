@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts", "postcss.config.mjs"],
+"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts", "postcss.config.mjs", "next-sitemap.config.mjs"],
   "exclude": ["node_modules"]
 }
