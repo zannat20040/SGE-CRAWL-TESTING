@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "title":"Personalized Counseling",
+        "text":"Our experienced counselors provide personalized guidance to help you choose the best university and program that aligns with your academic goals and career aspirations. We take into account your preferences, strengths, and future plans to recommend the most suitable options."
+    },
+    {
+        "id":2,
+        "title":"University Selection",
+        "text":"With our extensive database of universities worldwide, we assist you in selecting the right institution that matches your academic profile, budget, and personal preferences. Our expert team ensures you make informed decisions based on accurate and up-to-date information."
+    },
+    {
+        "id":3,
+        "title":"Application Assistance",
+        "text":"Navigating the application process can be overwhelming. We offer step-by-step assistance, from filling out application forms to writing compelling personal statements and preparing necessary documents. Our goal is to make your application stand out."
+    },
+    {
+        "id":4,
+        "title":"Visa Guidance",
+        "text":"Securing a student visa is a critical step in your study abroad journey. Our visa experts provide detailed guidance on visa requirements, application procedures, and interview preparation to increase your chances of a successful visa approval."
+    },
+    {
+        "id":5,
+        "title":"Test Preparation",
+        "text":"Many universities require standardized tests such as the IELTS, TOEFL, GRE, or GMAT. We offer test preparation services, including coaching classes, practice tests, and study materials, to help you achieve competitive scores."
+    },
+    {
+        "id":6,
+        "title":"Financial Planning",
+        "text":"Studying abroad involves significant financial investment. Our advisors help you explore various funding options, including scholarships, grants, and student loans, to make your education affordable and manageable."
+    },
+    {
+        "id":7,
+        "title":"Pre-Departure Orientation",
+        "text":"Moving to a new country can be challenging. Our pre-departure orientation sessions cover essential topics such as cultural adaptation, accommodation, travel arrangements, and health insurance, ensuring you are well-prepared for your new adventure."
+    },
+    {
+        "id":8,
+        "title":"Post-Arrival Support",
+        "text":"Our support doesn’t end once you reach your destination. We provide ongoing assistance to help you settle in, including guidance on local amenities, academic support, and connecting with other students. We are here to help you navigate any challenges that may arise during your stay abroad."
+    },
+    {
+        "id":9,
+        "title":"Career Counseling",
+        "text":"Thinking ahead to your post-graduation plans, we offer career counseling services to help you explore job opportunities, internships, and further studies. Our network of professionals and alumni can provide valuable insights and connections in your field of interest."
+    },
+    {
+        "id":9,
+        "title":"Career Counseling",
+        "text":"Thinking ahead to your post-graduation plans, we offer career counseling services to help you explore job opportunities, internships, and further studies. Our network of professionals and alumni can provide valuable insights and connections in your field of interest."
+    }
+]

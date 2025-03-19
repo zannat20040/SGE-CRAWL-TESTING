@@ -1,0 +1,40 @@
+[
+  {
+    "name": "UK",
+    "img": "/assets/Homepage/choose-your-destination/Flags/UK.webp",
+    "to": "/study-destinations/study-in-the-uk",
+    "label": "UK"
+  },
+  {
+    "name": "USA",
+    "img": "/assets/Homepage/choose-your-destination/Flags/USA.webp",
+    "to": "/study-destinations/study-in-the-usa",
+    "label": "USA"
+  },
+  {
+    "name": "Australia",
+    "img": "/assets/Homepage/choose-your-destination/Flags/Australia.webp",
+    "to": "/study-destinations/study-in-the-australia",
+    "label": "Australia"
+  },
+  {
+    "name": "Canada",
+    "img": "/assets/Homepage/choose-your-destination/Flags/Canada.webp",
+    "to": "/study-destinations/study-in-the-canada",
+    "label": "Canada"
+  },
+  {
+    "name": "Germany",
+    "img": "/assets/Homepage/choose-your-destination/Flags/Germany.webp",
+    "to": "/study-destinations/study-in-the-germany",
+    "label": "Germany"
+  },
+
+  {
+    "name": "Switzerland",
+    "img": "/assets/Homepage/choose-your-destination/Flags/Switzerland-Flag.webp",
+    "to": "/study-destinations/study-in-the-switzerland",
+    "label": "Switzerland"
+  }
+ 
+]
