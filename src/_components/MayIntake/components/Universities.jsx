@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Data from "../../../../../../../public/json/ukUni.json";
+import Data from "../../../../public/json/ukUni.json";
 import Image from "next/image";
 
 const Universities = () => {

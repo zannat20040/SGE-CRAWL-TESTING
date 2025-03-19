@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div>
       <section
-        className="relative bg-cover bg-center h-[50vh] sm:h-[60vh] lg:h-[70vh] flex flex-col justify-center items-center text-white text-center px-4 sm:px-8"
+        className="relative bg-cover bg-center h-[50vh] sm:h-[60vh] lg:h-[70vh] flex flex-col justify-center items-center text-white text-center px-4 sm:px-8 transform-none"
         style={{ backgroundImage: "url('https://i.ibb.co/5LpBxG7/hero.jpg')" }} // Fixed style
       >
         {/* Overlay */}

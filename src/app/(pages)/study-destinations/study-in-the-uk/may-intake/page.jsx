@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from './components/Banner';
-import Navbar from './components/Navbar';
+import Banner from '../../../../../_components/MayIntake/components/Banner';
+import Navbar from '../../../../../_components/MayIntake/components/Navbar';
 
 const page = () => {
     return (

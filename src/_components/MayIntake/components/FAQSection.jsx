@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import strength from '../../../../../../../public/assets/Homepage/Core Strength Icon.svg'
+import strength from '../../../../public/assets/Homepage/Core Strength Icon.svg'
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
