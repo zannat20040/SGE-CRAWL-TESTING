@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
     domains: ["i.ibb.co", "i.ibb.co.com"],
     unoptimized: true,
   },
+  
 };
 
 export default nextConfig;
