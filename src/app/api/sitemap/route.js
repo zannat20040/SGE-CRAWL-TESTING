@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_API_FORM_URL;
+  const formUrl = process.env.NEXT_PUBLIC_API_FORM_URL;
+  const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   try {
     const staticPages = [
@@ -35,11 +36,29 @@ export async function GET() {
       "/services",
     ];
 
-    // 🟢 Fetch Dynamic Blog or Event Data
-    const response = await fetch(`${baseUrl}/events`);
-    if (!response.ok) throw new Error("Failed to fetch event");
+    // 🟢 Fetch Dynamic Blog, Event Data
+    const [
+      eventResponse,
+      blogResponse,
+      studyDestinationResponse,
+      universityDetailsResponse,
+    ] = await Promise.all([
+      fetch(`${formUrl}/events`),
+      fetch(`${baseUrl}/api/blogs`),
+      fetch(`${baseUrl}/json/destination_data.json`),
+      fetch(`${baseUrl}/json/ukUni.json`),
+    ]);
 
-    const events = await response.json();
+    if (!eventResponse.ok) throw new Error("Failed to fetch events");
+    if (!blogResponse.ok) throw new Error("Failed to fetch blogs");
+    if (!studyDestinationResponse.ok)
+      throw new Error("Failed to fetch study destinations");
+
+    const events = await eventResponse.json();
+    const blogs = await blogResponse.json();
+    const studyDestinations = await studyDestinationResponse.json();
+    const universityDetails = await universityDetailsResponse.json();
+
     const currentDate = new Date().toISOString();
 
     // 🟢 Start Building XML Sitemap
@@ -51,11 +70,33 @@ export async function GET() {
       xml += `<url>\n<loc>${baseUrl}${page}</loc>\n<lastmod>${currentDate}</lastmod>\n</url>\n`;
     });
 
-    // 🔵 Add Dynamic Pages (Blogs / Events)
+    // 🔵 Add Dynamic Event Pages
     events.forEach((event) => {
-      xml += `<url>\n<loc>${baseUrl}/event/${event.eventURL}</loc>\n<lastmod>${
+      xml += `<url>\n<loc>${baseUrl}/events/${event.eventURL}</loc>\n<lastmod>${
         event.createdAt || currentDate
       }</lastmod>\n</url>\n`;
+    });
+
+    // 🔵 Add Dynamic Blog Pages
+    blogs.forEach((blog) => {
+      xml += `<url>\n<loc>${baseUrl}/blogs/${blog.url}</loc>\n<lastmod>${
+        blog.createdAt || currentDate
+      }</lastmod>\n</url>\n`;
+    });
+
+    // 🔵 Add Dynamic Study Destination Pages
+    studyDestinations.forEach((destination) => {
+      xml += `<url>\n<loc>${baseUrl}/study-destinations/${destination.url}</loc>\n<lastmod>${currentDate}</lastmod>\n</url>\n`;
+    });
+
+    // 🔵 Add Dynamic Study Destination UNIVERSITY Pages
+    universityDetails.forEach((university) => {
+      xml += `<url>\n<loc>${baseUrl}/study-destinations/study-in-the-${university?.country
+        ?.toLowerCase()
+        .replace(/ /g, "-")}/${university?.Name?.toLowerCase().replace(
+        / /g,
+        "-"
+      )}</loc>\n<lastmod>${currentDate}</lastmod>\n</url>\n`;
     });
 
     xml += `</urlset>`;
