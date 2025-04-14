@@ -132,7 +132,7 @@ const Footer = () => {
             <h2 className="lg:mulish-bold mulish-semibold text-blue-600  text-base mb-4 mt-8 uppercase">
               Services for students
             </h2>
-            <ul className="text-sm space-y-1">
+            <ul className="space-y-1">
               {studentServices.map(({ href, label }) => (
                 <Link key={href} href={href} className="hover:text-blue-600">
                   <li>{label}</li>
@@ -142,7 +142,7 @@ const Footer = () => {
             <h3 className="lg:mulish-bold mulish-semibold text-blue-600  text-base mt-3 uppercase">
               Services for partners
             </h3>
-            <ul className="text-sm space-y-1 mt-2">
+            <ul className=" space-y-1 mt-2">
               {partnerServices.map(({ href, label }) => (
                 <Link key={href} href={href} className="hover:text-blue-600">
                   <li>{label}</li>
@@ -155,7 +155,7 @@ const Footer = () => {
             <h2 className="lg:mulish-bold mulish-semibold text-blue-600  text-base mb-4 mt-8 uppercase">
               Company
             </h2>
-            <ul className="text-sm space-y-1">
+            <ul className="space-y-1">
               {companyLinks.map(({ href, label }) => (
                 <Link key={href} href={href} className="hover:text-blue-600">
                   <li>{label}</li>
