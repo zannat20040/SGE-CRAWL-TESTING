@@ -1,35 +1,44 @@
 import "./Banner.css";
-import EnquireModal from '../Banner/EnquireModal'
-import ApplicationModal from '../Banner/ApplicationModal'
+import EnquireModal from "../Banner/EnquireModal";
+import ApplicationModal from "../Banner/ApplicationModal";
+
 const Banner = () => {
-  const text = "DREAM BIG STUDY ABROAD.";
-  const Letter = text.split("");
+  const heading = "DREAM BIG STUDY ABROAD.";
+  const animatedLetters = heading.split("");
+
   return (
     <div className="relative z-[2]">
+      {/* Banner background and content container */}
       <div className="section">
-        <div className="section-bg"></div>
+        <div className="section-bg" />
+
         <div className="section-content pt-[31px] lg:pt-[93px] lg:pb-[206px] pb-[70px] max-w-[1155px] mx-auto">
-          <div className="text-center lg:text-left lg:pl-10">
-            <h2 className="text-[#00399f] text-center tracking-tight lg:text-left text-[45px] lg:text-[90px] font-bold lg:leading-[110px] leading-[130%]">
-              Start Your Path to<br></br> Global Education 
+          <div className="text-center lg:text-left lg:pl-10 w-2/3 px-2 lg:ml-0 mx-auto">
+            {/* Main Heading */}
+            <h2 className="text-[#00399f] tracking-tight text-[45px] lg:text-[90px] font-bold leading-[130%] lg:leading-[110px]">
+              Start Your Path to Global Education
             </h2>
-            <p className="font-normal lg:text-left text-center text-[14px] leading-[160%] lg:text-[21px] text-[#081831] lg:pl-6   pt-[14px] lg:pb-[61px] pb-[19px]">
-              We take pride in our ability to help students achieve their
-              <br></br> academic goals and succeed in life.
+
+            {/* Subheading */}
+            <p className="text-[#081831] font-normal text-[14px] lg:text-[21px] leading-[160%] pt-[14px] lg:pb-[61px] pb-[19px] lg:pl-6">
+              We take pride in our ability to help students achieve their academic goals and succeed in life.
             </p>
+
+            {/* CTA Buttons */}
             <div className="buttons-group-container">
               <div className="buttons-group">
-
                 <EnquireModal />
                 <ApplicationModal />
-                {/* <Link href="/comingSoon">Apply</Link> */} 
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Decorative spinning circular text */}
       <div className="hidden lg:flex justify-center items-center max-w-[1155px] mx-auto">
-        <div className="circle">
+        <div className="circle relative w-[200px] h-[200px]">
+          {/* Bouncing Arrow Icon */}
           <div className="icon">
             <svg
               width="56"
@@ -45,9 +54,11 @@ const Banner = () => {
               />
             </svg>
           </div>
+
+          {/* Circular Text Animation */}
           <div className="text-two">
             <p className="poppins-semibold">
-              {Letter.map((item, index) => {
+              {animatedLetters.map((item, index) => {
                 return (
                   <span
                     key={index}

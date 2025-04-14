@@ -1,194 +1,122 @@
 "use client";
-import {  useState } from "react";
-import "./Home_Events.css";
-import "swiper/css";
-import "swiper/css/pagination";
-import axios from "axios";
+
 import { useQuery } from "@tanstack/react-query";
+import { useState } from "react";
+import axios from "axios";
+import { SlideEvent } from "@/assets/type/EventInterface";
+import { processEvents } from "@/lib/eventUtils";
 import HomeEventForMobile from "./HomeEventForMobile";
 import HomeEventForLarge from "./HomeEventForLarge";
 
-interface Event {
-  id: string;
-  eventName: string;
-  eventStartDate: string;
-  eventStartTime: string;
-  eventEndDate: string;
-  eventEndTime: string;
-  startUTC: string;
-  endUTC: string;
-  startLocal: string;
-  endLocal: string;
-  eventImage: string;
-  eventPhoneImage: string;
-  eventLargeImage: string;
-  isOnline: false;
-  eventURL: string;
-  imageGallery: string[];
-}
-
-// Convert event time to UTC
-const convertToUTC = (dateStr: string, timeStr: string): string | null => {
-  if (!dateStr || !timeStr) {
-    console.error("⚠️ Invalid Date/Time:", { dateStr, timeStr });
-    return null;
-  }
-
-  const eventDateTime = new Date(`${dateStr}T${timeStr}:00+06:00`); // Assume BD time (UTC+6)
-
-  if (isNaN(eventDateTime.getTime())) {
-    return null;
-  }
-
-  return eventDateTime.toISOString();
-};
-
-// Convert UTC time to local time
-const convertToLocal = (utcDate: string): string => {
-  return utcDate ? new Date(utcDate).toLocaleString() : "Invalid Date";
-};
-
-// Fetch events from API
-const fetchEvents = async () => {
-  const response = await axios.get(
-    `${process.env.NEXT_PUBLIC_API_FORM_URL}/events`
-  );
-  const events: Event[] = response.data;
-
-  // Process events to include UTC, local times, and isActive status
-  const updatedEvents = events
-    .map((event) => {
-      if (!event.eventStartDate || !event.eventStartTime) return null;
-
-      const startUTC = convertToUTC(event.eventStartDate, event.eventStartTime);
-      const endUTC = convertToUTC(event.eventEndDate, event.eventEndTime);
-
-      if (!startUTC || !endUTC) return null;
-
-      return {
-        ...event,
-        startUTC,
-        endUTC,
-        startLocal: convertToLocal(startUTC),
-        endLocal: convertToLocal(endUTC),
-      };
-    })
-    .filter((event) => event !== null) as Event[]; // Remove invalid events and cast to Event[]
-
-  return updatedEvents;
-};
-
-const Home_Events = () => {
+const EventSlider = () => {
+  // Track which slide is currently active
   const [activeIndex, setActiveIndex] = useState(0);
 
-
-  // Use TanStack Query to fetch events
-  const { data: eventsData } = useQuery({
+  // Fetch events data using React Query (client-side only)
+  const { data: rawEvents = [] } = useQuery({
     queryKey: ["eventsData"],
-    queryFn: fetchEvents,
-    refetchOnWindowFocus: true, // Refetch on window focus
-    refetchInterval: 1000, // Refetch every 60 seconds
+    queryFn: async () => {
+      const res = await axios.get(
+        `${process.env.NEXT_PUBLIC_API_FORM_URL}/events`
+      );
+      return processEvents(res.data as SlideEvent[]); // Add local/UTC conversion
+    },
+    refetchOnWindowFocus: true,
+    refetchInterval: 60000, // Refetch every 60 seconds
   });
 
-  // Filter events for ongoing and upcoming ones
-  const currentDate = new Date();
-  const upcomingEvents =
-    eventsData?.filter((event) => new Date(event.startUTC) > currentDate) ?? [];
+  // Separate events into upcoming and past
+  const now = new Date();
+  const upcoming = rawEvents.filter((e) => new Date(e.startUTC) > now);
+  const past = rawEvents.filter((e) => new Date(e.endUTC) < now);
 
-  // Sort upcoming events by start time in ascending order (earliest first)
-  upcomingEvents.sort(
-    (a, b) => new Date(a.startUTC).getTime() - new Date(b.startUTC).getTime()
-  );
+  // Sort and combine the list: upcoming first, then recent past events
+  const slideEvents = [
+    ...upcoming.sort(sortByTimeAsc),
+    ...past.sort(sortByTimeDesc),
+  ].slice(0, 10); // Show only top 10 total
 
-  const pastEvents =
-    eventsData?.filter((event) => new Date(event.endUTC) < currentDate) || [];
+  // Sort utility: ascending by start time
+  function sortByTimeAsc(a: SlideEvent, b: SlideEvent) {
+    return new Date(a.startUTC).getTime() - new Date(b.startUTC).getTime();
+  }
 
-  // Sort upcoming events by start time in ascending order (earliest first)
-  pastEvents
-    .sort(
-      (a, b) => new Date(a.startUTC).getTime() - new Date(b.startUTC).getTime()
-    )
-    .reverse();
+  // Sort utility: descending by start time
+  function sortByTimeDesc(a: SlideEvent, b: SlideEvent) {
+    return new Date(b.startUTC).getTime() - new Date(a.startUTC).getTime();
+  }
 
-  const slideEvents = [...upcomingEvents, ...pastEvents].slice(0, 10);
-
-
+  // Go to next slide
   const slideNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % slideEvents?.length);
+    setActiveIndex((prev) => (prev + 1) % slideEvents.length);
   };
 
+  // Go to previous slide
   const slidePrev = () => {
     setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + slideEvents?.length) % slideEvents?.length
+      (prev) => (prev - 1 + slideEvents.length) % slideEvents.length
     );
   };
 
-  const renderEventPosition = (
-    relativeIndex: number,
-    totalLength: number
-  ): string => {
-    const index = (relativeIndex - activeIndex + totalLength) % totalLength;
+  /**
+   * Determines the CSS class based on relative slide index.
+   * This controls the 3D carousel position: center, left, right, etc.
+   */
+  const renderEventPosition = (i: number, total: number): string => {
+    const index = (i - activeIndex + total) % total;
 
-    // Handling the edge cases for different lengths of events
-    if (totalLength <= 2) {
+    if (total <= 2)
       return index === 0 ? "slide-pos-center" : "slide-pos-center1";
-    } else if (totalLength === 3) {
-      return index === 1
-        ? "slide-pos-right1"
-        : index === 0
-        ? "slide-pos-center"
-        : "slide-pos-left1";
-    } else if (totalLength === 4) {
-      return index === 1
-        ? "slide-pos-right1"
-        : index === 3
-        ? "slide-pos-left1"
-        : index === 0
-        ? "slide-pos-center"
-        : "slide-pos-center1";
-    } else if (totalLength >= 5) {
-      return index === 1
-        ? "slide-pos-right1"
-        : index === 2
-        ? "slide-pos-right2"
-        : index === totalLength - 2
-        ? "slide-pos-left2"
-        : index === totalLength - 1
-        ? "slide-pos-left1"
-        : index === 0
-        ? "slide-pos-center"
-        : "slide-pos-center1";
-    }
 
-    // Fallback if no condition is met, ensuring a string is always returned
-    return "slide-pos-center1";
+    if (total === 3)
+      return ["slide-pos-center", "slide-pos-right1", "slide-pos-left1"][index];
+
+    if (total === 4)
+      return [
+        "slide-pos-center",
+        "slide-pos-right1",
+        "slide-pos-center1",
+        "slide-pos-left1",
+      ][index];
+
+    // For 5+ slides
+    return (
+      [
+        "slide-pos-center",
+        "slide-pos-right1",
+        "slide-pos-right2",
+        "slide-pos-left2",
+        "slide-pos-left1",
+      ][index > 4 ? 5 : index] || "slide-pos-center1"
+    );
   };
 
-  return (
-    <>
-      {slideEvents.length > 0 ? (
-        <div className="w-full relative events-bg lg:h-[850px] xl:h-[1000px] sm:h-[600px] md:h-[500px] h-[500px] lg:mb-[100px] mb-5 overflow-hidden">
-          <h2 className="poppins-bold lg:text-[64px] text-[28px] text-gradient text-center lg:pt-[123px] pt-[50px] lg:pb-[68px] pb-[41px] text-white">
-            Upcoming Events
-          </h2>
+  // If no events to show, don't render the section
+  if (slideEvents.length === 0) return null;
 
-          <HomeEventForMobile
-            mobileSlidePrev={slidePrev}
-            mobileSlideNext={slideNext}
-            slideEvents={slideEvents}
-          />
-          <HomeEventForLarge
-            slideNext={slideNext}
-            slidePrev={slidePrev}
-            renderEventPosition={renderEventPosition}
-            slideEvents={slideEvents}
-          />
-        </div>
-      ) : (
-        <p className="pb-20"></p>
-      )}
-    </>
+  return (
+    <div className="w-full relative events-bg lg:h-[850px] xl:h-[1000px] sm:h-[600px] md:h-[500px] h-[500px] lg:mb-[100px] mb-5 overflow-hidden">
+      {/* Section Title */}
+      <h2 className="poppins-bold lg:text-[64px] text-[28px] text-gradient text-center lg:pt-[123px] pt-[50px] lg:pb-[68px] pb-[41px] text-white">
+        Upcoming Events
+      </h2>
+
+      {/* Mobile Version Carousel */}
+      <HomeEventForMobile
+        mobileSlidePrev={slidePrev}
+        mobileSlideNext={slideNext}
+        slideEvents={slideEvents}
+      />
+
+      {/* Desktop Version Carousel */}
+      <HomeEventForLarge
+        slideNext={slideNext}
+        slidePrev={slidePrev}
+        renderEventPosition={renderEventPosition}
+        slideEvents={slideEvents}
+      />
+    </div>
   );
 };
 
-export default Home_Events;
+export default EventSlider;

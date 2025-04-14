@@ -1,73 +1,54 @@
 import React from "react";
-import Link from "next/link"; // Ensure you import Link
-import Image from "next/image"; // Ensure you import Image
+import Link from "next/link";
+import Image from "next/image";
+import { HomeEventForLargeProps } from "@/assets/type/EventInterface";
 import "./Home_Events.css";
 
-interface HomeEventForLargeProps {
-  slidePrev: () => void;
-  slideNext: () => void;
-  renderEventPosition: (index: number, length: number) => string;
-  slideEvents: {
-    eventURL: string;
-    eventLargeImage: string;
-    eventImage: string;
-    eventPhoneImage?: string;
-  }[];
-}
-
-const HomeEventForLarge: React.FC<HomeEventForLargeProps> = ({
+// Functional Component
+function HomeEventForLarge({
   slidePrev,
   slideNext,
   renderEventPosition,
   slideEvents,
-}) => {
+}: HomeEventForLargeProps) {
   return (
-    <div className="events-bg max-w-[1254px] mx-auto relative px-[50px] lg:block hidden">
-      {slideEvents.map((image, index) => {
-        const eventPosition = renderEventPosition(index, slideEvents.length);
-
-        return (
-          <Link href={`/events/${image?.eventURL}`} key={index}>
-            <div className={`absolute ${eventPosition} carousel-1`}>
+    <div className="events-bg max-w-[1254px] mx-auto relative px-[50px] hidden lg:block">
+      {/* Event Slides */}
+      {slideEvents.map((event, index) => (
+        <Link href={`/events/${event.eventURL}`} key={index}>
+          <div
+            className={`absolute ${renderEventPosition(
+              index,
+              slideEvents.length
+            )} carousel-1`}
+          >
             <Image
-                    className="max-w-[650px] max-h-[450px] h-[526px] w-[946px] xl:max-w-[946px] xl:max-h-[700px] rounded-[50px] cursor-pointer"
-                    width={946}
-                    height={526}
-                    src={image?.eventLargeImage||image?.eventImage}
-                    alt={`event${index + 1}`}
-                    priority
-                  />
-            </div>
-          </Link>
-        );
-      })}
+              src={event.eventLargeImage || event.eventImage}
+              alt={`Event ${index + 1}`}
+              width={946}
+              height={526}
+              className="max-w-[650px] max-h-[450px] h-[526px] w-[946px] xl:max-w-[946px] xl:max-h-[700px] rounded-[50px] cursor-pointer"
+              loading="lazy"
+            />
+          </div>
+        </Link>
+      ))}
 
+      {/* Navigation Buttons */}
       {slideEvents.length > 1 && (
-        <div className="absolute lg:flex hidden justify-between left-0 right-0 lg:top-[170px] xl:top-[240px] lg:px-5 xl:px-0 z-50">
+        <div className="absolute justify-between left-0 right-0 lg:top-[170px] xl:top-[240px] px-5 xl:px-0 flex z-50">
           <button className="button-one-next" onClick={slidePrev}>
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 36 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
               <path
-                d="M28 0H8C5.87827 0 3.84344 0.842854 2.34315 2.34315C0.842854 3.84344 0 5.87827 0 8V28C0 30.1217 0.842854 32.1566 2.34315 33.6569C3.84344 35.1571 5.87827 36 8 36H28C30.1217 36 32.1566 35.1571 33.6569 33.6569C35.1571 32.1566 36 30.1217 36 28V8C36 5.87827 35.1571 3.84344 33.6569 2.34315C32.1566 0.842854 30.1217 0 28 0ZM22 22.94C22.2809 23.2213 22.4387 23.6025 22.4387 24C22.4387 24.3975 22.2809 24.7787 22 25.06C21.7187 25.3409 21.3375 25.4987 20.94 25.4987C20.5425 25.4987 20.1612 25.3409 19.88 25.06L13.88 19.06C13.5991 18.7787 13.4413 18.3975 13.4413 18C13.4413 17.6025 13.5991 17.2213 13.88 16.94L19.88 10.94C20.1643 10.675 20.5404 10.5308 20.929 10.5376C21.3176 10.5445 21.6884 10.7019 21.9632 10.9768C22.2381 11.2516 22.3955 11.6224 22.4023 12.011C22.4092 12.3996 22.265 12.7756 22 13.06L17.12 18L22 22.94Z"
+                d="M28 0H8C5.9 0 3.8 0.8 2.3 2.3C0.8 3.8 0 5.9 0 8V28C0 30.1 0.8 32.2 2.3 33.7C3.8 35.2 5.9 36 8 36H28C30.1 36 32.2 35.2 33.7 33.7C35.2 32.2 36 30.1 36 28V8C36 5.9 35.2 3.8 33.7 2.3C32.2 0.8 30.1 0 28 0ZM22 22.9C22.3 23.2 22.4 23.6 22.4 24C22.4 24.4 22.3 24.8 22 25.1C21.7 25.3 21.3 25.5 20.9 25.5C20.5 25.5 20.2 25.3 19.9 25.1L13.9 19.1C13.6 18.8 13.4 18.4 13.4 18C13.4 17.6 13.6 17.2 13.9 16.9L19.9 10.9C20.2 10.6 20.5 10.5 20.9 10.5C21.3 10.5 21.7 10.6 22 10.9C22.3 11.2 22.4 11.6 22.4 12C22.4 12.4 22.3 12.8 22 13.1L17.1 18L22 22.9Z"
                 fill="white"
               />
             </svg>
           </button>
           <button className="button-one-prev" onClick={slideNext}>
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 36 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
               <path
-                d="M8 36L28 36C30.1217 36 32.1566 35.1571 33.6569 33.6569C35.1571 32.1566 36 30.1217 36 28L36 8C36 5.87827 35.1571 3.84344 33.6569 2.34315C32.1566 0.842856 30.1217 -5.13895e-07 28 -6.99382e-07L8 -2.44784e-06C5.87827 -2.63333e-06 3.84344 0.842853 2.34315 2.34314C0.842859 3.84344 2.63333e-06 5.87826 2.44784e-06 8L6.99382e-07 28C5.13895e-07 30.1217 0.842857 32.1566 2.34315 33.6569C3.84344 35.1571 5.87827 36 8 36ZM14 13.06C13.7191 12.7787 13.5613 12.3975 13.5613 12C13.5613 11.6025 13.7191 11.2212 14 10.94C14.2813 10.6591 14.6625 10.5013 15.06 10.5013C15.4575 10.5013 15.8388 10.6591 16.12 10.94L22.12 16.94C22.4009 17.2213 22.5587 17.6025 22.5587 18C22.5587 18.3975 22.4009 18.7787 22.12 19.06L16.12 25.06C15.8357 25.325 15.4596 25.4692 15.071 25.4623C14.6824 25.4555 14.3116 25.2981 14.0368 25.0232C13.7619 24.7484 13.6045 24.3776 13.5977 23.989C13.5908 23.6004 13.735 23.2243 14 22.94L18.88 18L14 13.06Z"
+                d="M8 36L28 36C30.1 36 32.2 35.2 33.7 33.7C35.2 32.2 36 30.1 36 28L36 8C36 5.9 35.2 3.8 33.7 2.3C32.2 0.8 30.1 0 28 0L8 0C5.9 0 3.8 0.8 2.3 2.3C0.8 3.8 0 5.9 0 8L0 28C0 30.1 0.8 32.2 2.3 33.7C3.8 35.2 5.9 36 8 36ZM14 13.1C13.7 12.8 13.6 12.4 13.6 12C13.6 11.6 13.7 11.2 14 10.9C14.3 10.7 14.7 10.5 15.1 10.5C15.5 10.5 15.8 10.7 16.1 10.9L22.1 16.9C22.4 17.2 22.6 17.6 22.6 18C22.6 18.4 22.4 18.8 22.1 19.1L16.1 25.1C15.8 25.4 15.5 25.5 15.1 25.5C14.7 25.5 14.3 25.4 14 25.1C13.7 24.8 13.6 24.4 13.6 24C13.6 23.6 13.7 23.2 14 22.9L18.9 18L14 13.1Z"
                 fill="white"
               />
             </svg>
@@ -76,6 +57,6 @@ const HomeEventForLarge: React.FC<HomeEventForLargeProps> = ({
       )}
     </div>
   );
-};
+}
 
 export default HomeEventForLarge;

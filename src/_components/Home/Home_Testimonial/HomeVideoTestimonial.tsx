@@ -4,7 +4,7 @@ import { useState } from "react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import sliders from "../../../../public/json/VideoData.json";
 import { useSwipeable } from "react-swipeable";
-import ReactPlayer from "react-player";
+import ReactPlayer from './ReactPlayer';
  
 
 const HomeVideoTestimonial = () => {

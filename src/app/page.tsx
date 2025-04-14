@@ -10,15 +10,11 @@ import ImageGallery from "@/_components/Home/Home_ImageGallery/ImageGallery";
 import Home_Contact from "@/_components/Home/Home_Contact/Home_Contact";
 import WelcomeModal from "@/_components/Home/WelcomeModal/WelcomeModal";
 import HomeVideoTestimonial from "@/_components/Home/Home_Testimonial/HomeVideoTestimonial";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <div className=" font-poppins overflow-x-hidden ">
       <WelcomeModal />
-      <Link className="hidden" href="/study-destinations">
-        Study
-      </Link>
       <Banner />
       <Home_Events />
       <Home_Tab />
