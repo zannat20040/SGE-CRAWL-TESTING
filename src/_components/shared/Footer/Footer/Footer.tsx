@@ -1,12 +1,8 @@
-"use client";
 
-import { useEffect, useState } from "react";
 import "./Footer.css";
 import Image from "next/image";
 import Link from "next/link";
 import BadgeComponent from "./BadgeComponent";
-import { Destination } from "../../../../assets/type/interfaces";
-import axios from "axios";
 import footer_shape from "../../../../../public/assets/Homepage/footer/footer-Shape.webp";
 import footer1 from "../../../../../public/assets/Homepage/footer/footer1.webp";
 import footer2 from "../../../../../public/assets/Homepage/footer/footer2.webp";
@@ -20,28 +16,10 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import OfficeList2 from "@/_components/OfficeList2/OfficeList2";
+import FooterCountries from "./FooterCountries";
 
 const Footer = () => {
-  const [countries, setCountries] = useState<Destination[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
   const textColor = "text-[#CACACA]";
-
-  useEffect(() => {
-    // Fetch data using Axios
-    const fetchDestinations = async () => {
-      try {
-        const response = await axios.get("/json/destination_data.json");
-        setCountries(response.data);
-      } catch (err) {
-        console.error(err);
-        // setError("Failed to load destinations");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchDestinations();
-  }, []);
 
   return (
     <div className=" ">
@@ -86,26 +64,7 @@ const Footer = () => {
               <h2 className="lg:mulish-bold text-blue-600  mulish-semibold text-base mb-4 mt-8 uppercase">
                 Study Destinations
               </h2>
-              {loading ? (
-                <p className="py-4 ">Loading.....</p>
-              ) : (
-                <ul className="mulish-regular lg:text-base text-sm">
-                  {countries?.map((country) => (
-                    <li
-                      key={country?.destinationName}
-                      className="hover:text-blue-600"
-                    >
-                      <Link
-                        // rel="nofollow"
-                        href={`/study-destinations/${country?.url}`}
-                        className="block w-full"
-                      >
-                        {country?.destinationName}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
+             <FooterCountries />
             </div>
             <div className="w-[282px]  mx-auto lg:mx-0 text-center lg:text-start">
               <h2 className="lg:mulish-bold mulish-semibold text-blue-600  text-base mb-4 mt-8 uppercase">

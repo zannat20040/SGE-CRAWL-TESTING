@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import React, { useRef, useState } from "react";
 import officeData from "./addresses2.json";  // ✅ Import JSON directly
 
