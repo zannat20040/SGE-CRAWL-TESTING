@@ -46,7 +46,7 @@ export default function CounterGrid() {
       {counters.map((item, index) => (
         <motion.div
           key={index}
-          className="text-center flex flex-col items-center justify-between"
+          className="text-center flex flex-col items-center justify-between gap-1"
           // Animate on scroll into view
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 20 }}
@@ -58,7 +58,7 @@ export default function CounterGrid() {
             alt={item.text}
             width={100}
             height={100}
-            className="w-auto h-auto"
+            className="w-12 h-12"
             loading="lazy"
           />
 

@@ -16,8 +16,9 @@ const CoreStrength = () => {
         className="lg:py-32 poppins"
       >
         <div
-          className="max-w-7xl mx-auto rounded-3xl"
+          className="max-w-7xl mx-auto rounded-3xl "
           style={{
+            backgroundSize: "cover",
             background:
               "linear-gradient(124deg, rgba(49,135,252,1) 39%, rgba(5,34,230,1) 100%)",
           }}
@@ -48,7 +49,7 @@ const CoreStrength = () => {
                   "linear-gradient(183deg, rgba(0,0,0,0) 30%, rgba(6,45,79,1) 90%)",
               }}
             >
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-center text-white font-bold px-10 gap-2 md:gap-10 my-5 lg:my-10 max-w-7xl mx-auto">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-center text-white font-bold px-10 gap-2 md:gap-10 my-5 lg:my-10 max-w-7xl mx-auto pb-10">
                 <CounterGrid />
               </div>
             </div>
