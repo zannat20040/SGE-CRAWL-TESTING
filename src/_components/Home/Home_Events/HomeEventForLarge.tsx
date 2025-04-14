@@ -14,29 +14,28 @@ function HomeEventForLarge({
   return (
     <div className="events-bg max-w-[1254px] mx-auto relative px-[50px] hidden lg:block">
       {/* Event Slides */}
-      {slideEvents.map((event, index) => (
-        <Link href={`/events/${event.eventURL}`} key={index}>
-          <div
-            className={`absolute ${renderEventPosition(
-              index,
-              slideEvents.length
-            )} carousel-1`}
-          >
+      {slideEvents.map((image, index) => {
+        const eventPosition = renderEventPosition(index, slideEvents.length);
+
+        return (
+          <Link href={`/events/${image?.eventURL}`} key={index}>
+            <div className={`absolute ${eventPosition} carousel-1`}>
             <Image
-              src={event.eventLargeImage || event.eventImage}
-              alt={`Event ${index + 1}`}
-              width={946}
-              height={526}
-              className="max-w-[650px] max-h-[450px] h-[526px] w-[946px] xl:max-w-[946px] xl:max-h-[700px] rounded-[50px] cursor-pointer"
-              loading="lazy"
-            />
-          </div>
-        </Link>
-      ))}
+                    className="max-w-[650px] max-h-[450px] h-[526px] w-[946px] xl:max-w-[946px] xl:max-h-[700px] rounded-[50px] cursor-pointer"
+                    width={946}
+                    height={526}
+                    src={image?.eventLargeImage||image?.eventImage}
+                    alt={`event${index + 1}`}
+                    priority
+                  />
+            </div>
+          </Link>
+        );
+      })}
 
       {/* Navigation Buttons */}
       {slideEvents.length > 1 && (
-        <div className="absolute justify-between left-0 right-0 lg:top-[170px] xl:top-[240px] px-5 xl:px-0 flex z-50">
+        <div className="absolute justify-between left-0 right-0 lg:top-[200px] xl:top-[240px] px-5 xl:px-0 flex z-50">
           <button className="button-one-next" onClick={slidePrev}>
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
               <path

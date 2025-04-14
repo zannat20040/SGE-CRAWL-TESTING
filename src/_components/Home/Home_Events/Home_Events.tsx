@@ -62,35 +62,46 @@ const EventSlider = () => {
    * Determines the CSS class based on relative slide index.
    * This controls the 3D carousel position: center, left, right, etc.
    */
-  const renderEventPosition = (i: number, total: number): string => {
-    const index = (i - activeIndex + total) % total;
+  const renderEventPosition = (
+    relativeIndex: number,
+    totalLength: number
+  ): string => {
+    const index = (relativeIndex - activeIndex + totalLength) % totalLength;
 
-    if (total <= 2)
+    // Handling the edge cases for different lengths of events
+    if (totalLength <= 2) {
       return index === 0 ? "slide-pos-center" : "slide-pos-center1";
+    } else if (totalLength === 3) {
+      return index === 1
+        ? "slide-pos-right1"
+        : index === 0
+        ? "slide-pos-center"
+        : "slide-pos-left1";
+    } else if (totalLength === 4) {
+      return index === 1
+        ? "slide-pos-right1"
+        : index === 3
+        ? "slide-pos-left1"
+        : index === 0
+        ? "slide-pos-center"
+        : "slide-pos-center1";
+    } else if (totalLength >= 5) {
+      return index === 1
+        ? "slide-pos-right1"
+        : index === 2
+        ? "slide-pos-right2"
+        : index === totalLength - 2
+        ? "slide-pos-left2"
+        : index === totalLength - 1
+        ? "slide-pos-left1"
+        : index === 0
+        ? "slide-pos-center"
+        : "slide-pos-center1";
+    }
 
-    if (total === 3)
-      return ["slide-pos-center", "slide-pos-right1", "slide-pos-left1"][index];
-
-    if (total === 4)
-      return [
-        "slide-pos-center",
-        "slide-pos-right1",
-        "slide-pos-center1",
-        "slide-pos-left1",
-      ][index];
-
-    // For 5+ slides
-    return (
-      [
-        "slide-pos-center",
-        "slide-pos-right1",
-        "slide-pos-right2",
-        "slide-pos-left2",
-        "slide-pos-left1",
-      ][index > 4 ? 5 : index] || "slide-pos-center1"
-    );
+    // Fallback if no condition is met, ensuring a string is always returned
+    return "slide-pos-center1";
   };
-
   // If no events to show, don't render the section
   if (slideEvents.length === 0) return null;
 
