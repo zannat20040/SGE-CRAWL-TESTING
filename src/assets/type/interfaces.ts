@@ -87,3 +87,21 @@ export interface DisplayCountriesProps {
   loading: boolean;
   error: string | null;
 }
+
+export interface UniversityDetails {
+  country: string;
+  logo: string;
+  Name: string;
+  Overview: string;
+  location: string;
+  rank: string | null;
+  established: string;
+  History: string;
+  "Ranking & Achievement": string;
+  Services: string;
+  "Department & Faculty": string;
+  Accommodation: string;
+  Fee: string;
+  "international student": number; // Fraction like 0.2 (i.e., 20%)
+  courses: string;
+}

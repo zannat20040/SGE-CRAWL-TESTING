@@ -1,21 +1,10 @@
-"use client";
-
 import "./Home_UniversityList.css";
-import allUni from "../../../../public/json/ukUni.json";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import Link from "next/link";
-// import { useRouter } from "next/navigation";
-
-interface Destination {
-  logo: string | null;
-  Name: string | null;
-  country: string | null;
-}
+import UniversityCard from "./UniversityCard";
 
 const Home_UniversityList = () => {
-  // const router = useRouter();
-
   return (
     <div className="lg:mt-[131px] mt-[40px] lg:mb-[117px] mb-[40px]">
       {/* Heading Section */}
@@ -29,6 +18,7 @@ const Home_UniversityList = () => {
         <Image
           width={100}
           height={100}
+          loading="lazy"
           className="mx-auto lg:w-[290px] w-[190px] py-3 bg-white h-auto"
           src="/assets/Homepage/University Section Animation.gif"
           alt="University Animation"
@@ -38,121 +28,13 @@ const Home_UniversityList = () => {
       {/* Marquee Section */}
       <Marquee className="mb-10" pauseOnHover speed={250} direction="right">
         <div className="flex gap-10">
-          {allUni.map((uni: Destination) => (
-            // <a
-            //   href="#"
-            //   rel="nofollow"
-            //   onClick={(e) => {
-            //     e.preventDefault();
-            //     if (uni.country && uni.Name) {
-            //       router.push(
-            //         `/study-destinations/study-in-the-${uni.country
-            //           .toLowerCase()
-            //           .replace(/\s+/g, "-")}/${uni.Name.toLowerCase().replace(
-            //           /\s+/g,
-            //           "-"
-            //         )}`
-            //       );
-            //     }
-            //   }}
-            //   className="cursor-pointer flex justify-center items-center"
-            //   key={uni.Name?.replace(/\s+/g, "-")}
-            // >
-            //   <Image
-            //     width={100}
-            //     height={100}
-            //     className="w-[200px] h-[150px] object-contain"
-            //     src={uni.logo ? uni.logo : "/assets/default-university-logo.png"}
-            //     alt={uni.Name || "University"}
-            //   />
-            // </a>
-
-            <Link
-              key={uni.Name?.replace(/\s+/g, "-")}
-              href={
-                uni.country && uni.Name
-                  ? `/study-destinations/study-in-the-${uni.country
-                      .toLowerCase()
-                      .replace(/\s+/g, "-")}/${uni.Name.toLowerCase().replace(
-                      /\s+/g,
-                      "-"
-                    )}`
-                  : "#"
-              }
-              className="cursor-pointer flex justify-center items-center"
-            >
-              <Image
-                width={100}
-                height={100}
-                className="w-[200px] h-[150px] object-contain"
-                src={
-                  uni.logo ? uni.logo : "/assets/default-university-logo.png"
-                }
-                alt={uni.Name || "University"}
-              />
-            </Link>
-          ))}
+          <UniversityCard />
         </div>
       </Marquee>
 
       <Marquee pauseOnHover speed={250}>
         <div className="flex gap-10">
-          {allUni.map((uni: Destination) => (
-            // <a
-            //   href="#"
-            //   rel="nofollow"
-            //   onClick={(e) => {
-            //     e.preventDefault();
-            //     if (uni.country && uni.Name) {
-            //       router.push(
-            //         `/study-destinations/study-in-the-${uni.country
-            //           .toLowerCase()
-            //           .replace(/\s+/g, "-")}/${uni.Name.toLowerCase().replace(
-            //           /\s+/g,
-            //           "-"
-            //         )}`
-            //       );
-            //     }
-            //   }}
-            //   className="cursor-pointer flex justify-center items-center"
-            //   key={uni.Name?.replace(/\s+/g, "-")}
-            // >
-            //   <Image
-            //     width={100}
-            //     height={100}
-            //     className="w-[200px] h-[150px] object-contain"
-            //     src={
-            //       uni.logo ? uni.logo : "/assets/default-university-logo.png"
-            //     }
-            //     alt={uni.Name || "University"}
-            //   />
-            // </a>
-
-            <Link
-              key={uni.Name?.replace(/\s+/g, "-")}
-              href={
-                uni.country && uni.Name
-                  ? `/study-destinations/study-in-the-${uni.country
-                      .toLowerCase()
-                      .replace(/\s+/g, "-")}/${uni.Name.toLowerCase().replace(
-                      /\s+/g,
-                      "-"
-                    )}`
-                  : "#"
-              }
-              className="cursor-pointer flex justify-center items-center"
-            >
-              <Image
-                width={100}
-                height={100}
-                className="w-[200px] h-[150px] object-contain"
-                src={
-                  uni.logo ? uni.logo : "/assets/default-university-logo.png"
-                }
-                alt={uni.Name || "University"}
-              />
-            </Link>
-          ))}
+          <UniversityCard />
         </div>
       </Marquee>
 
