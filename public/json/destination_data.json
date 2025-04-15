@@ -157,6 +157,320 @@
   },
 
   {
+    "destinationName": "sweden",
+    "destinationFlag": "/assets/Homepage/choose-your-destination/Flags/Australia.webp",
+    "destinationDescription": "Australia is one of the top destinations for international students. It is famous for its diverse cultures and high-quality education. Some of the world’s leading universities are in Australia, and they provide world-class opportunities for research, innovation, and careers. With globally recognized degrees and English as the medium of instruction, international students can immerse themselves in a global environment.",
+    "whyStudyDescription": "Australian universities are renowned for their academic excellence, and their programs are designed to be practical, preparing students for global careers. Australia is a multicultural society where international students can feel safe and foster a sense of belonging. The Australian government offers post-study work visas to students.",
+    "quickFacts": [
+      "Australia hosted approximately 360,000–380,000 international students.",
+      "Australia ranks 3rd globally in hosting international students (after the United States and the United Kingdom).",
+      "About 15–20% of international graduates secure leadership positions within five years of graduation.",
+      "International students contribute approximately AUD $37–40 billion annually to the Australian economy.",
+      "Australia is one of the most unique countries in the world—not only geographically but also culturally. International students are warmly welcomed and might be surprised by: Australians’ direct and straightforward communication style.Their laid-back and casual attitude to life.\n Their love for dry, self-deprecating jokes.\n ",
+      "Their passion for the outdoors, often walking barefoot and enjoying activities like exploring the Great Barrier Reef and national parks.\n Australia also respects and celebrates Indigenous Australian culture."
+    ],
+    "scholarship": [
+      "Australia Awards Scholarships: Fully funded scholarships.",
+      "Endeavour Scholarships and Fellowships: For international students undertaking research or professional development.",
+      "University-Specific Scholarships: Merit-based scholarships that can cover tuition fees or provide financial assistance.",
+      "Australia for ASEAN Scholarships.",
+      "Deakin Vice-Chancellor’s International Scholarship.",
+      "Curtin University Alumni and Family Scholarship.",
+      "University of New South Wales International Scholarships.",
+      "Charles Darwin University International Scholarships.",
+      "Griffith University International Scholarships."
+    ],
+    "programDuration": [
+      {
+        "qualification": "Bachelor's Degree",
+        "duration": "3-4 years",
+        "gir": "N/A"
+      },
+      {
+        "qualification": "Master's Degree",
+        "duration": "1-2 years",
+        "gir": "N/A"
+      },
+      {
+        "qualification": "Doctoral Degree (PhD)",
+        "duration": "3-4 years",
+        "gir": "N/A"
+      }
+    ],
+    "postGraduationOpportunity": [
+      {
+        "qualification": "Diploma ",
+        "duration": "Up to 18 months."
+      },
+      {
+        "qualification": "Master's by Coursework ",
+        "duration": "Up to 2 years."
+      },
+      {
+        "qualification": "Master's by Research or Doctorate",
+        "duration": "Up to 3 or 4 years."
+      }
+    ],
+    "costOfStudy": [
+      { "degree": "Accommodation", "cost": "AUD 500 to AUD 1,200 per month" },
+      { "degree": "Food", "cost": "AUD 300 to AUD 600 per month" },
+      { "degree": "Transportation", "cost": "AUD 100 to AUD 200 per month" },
+      {
+        "degree": "Utilities and Internet",
+        "cost": "AUD 150 to AUD 250 per month"
+      }
+    ],
+    "academicIntake": [
+      {
+        "qualification": "Summer Intake",
+        "duration": "February , July"
+      }
+    ],
+    "preparationTime": "September and November for the February intake and March and May for the July intake.",
+    "popularIn": [
+      "Business and Management",
+      "Engineering",
+      "Information Technology",
+      "Health Sciences",
+      "Arts and Humanities"
+    ],
+    "studyRequirement": [
+      {
+        "title": "To study in Australia, international students must obtain a Student Visa (subclass 500)",
+        "description": "Key requirements include: ● Enrollment in a course at an Australian institution.\n● Proof of sufficient funds.\n● Overseas Student Health Cover (OSHC) for health insurance coverage.\n● Minimum IELTS or TOEFL scores to prove English language proficiency.",
+        "img": "/assets/UK Page/4. Requirements Section/49 a 1-1-min.png"
+      }
+    ],
+    "examRequirement": [
+      {
+        "examName": "For Visa purposes ",
+        "requirementList": [
+          "Major test results accepted by the Australian Department of Immigration and Citizenship (DIAC) for visa purposes are IELTS, TOEFL, CAE and PTE."
+        ]
+      }
+    ],
+    "documents": {
+      "description": "Documents Required to Study in Australia for International Students.",
+      "list": [
+        "Passport",
+        "Academic Transcripts",
+        "Proof of Financial Capacity",
+        "Health Insurance",
+        "Letter of Offer from a University",
+        "Visa Application Form"
+      ]
+    },
+    "statement": {
+      "description": "Provide a compelling statement of purpose.",
+      "list": [
+        "Academic Transcripts",
+        "Passport",
+        "Proof of Financial Capacity",
+        "Health Insurance",
+        "Letter of Offer from a University",
+        "Visa Application Form"
+      ]
+    },
+    "application": {
+      "description": "Requirement for an Australia student visa",
+      "list": [
+        "Proof of enrolment (your electronic confirmation of enrolment eCOE)",
+        "A valid passport.",
+        "Your visa application fee.",
+        "You are required to meet Genuine Student Criteria",
+        "Academic and work experience documents",
+        "Evidence of your English proficiency skills (such as IELTS test scores)",
+        "Evidence of financial ability (tuition fees, living expenses, expenses for dependents, return airfare)",
+        "Details of your health insurance policy (OSHC)",
+        "Passport-size photographs"
+      ]
+    },
+    "faq": [
+      {
+        "question": "Is Australia a good place to study for international students?",
+        "answer": "Yes, Australia offers a high-quality education system, diverse culture, and beautiful landscapes for international students."
+      },
+      {
+        "question": "What is the cost of living in Australia for students?",
+        "answer": "The cost of living in Australia is generally higher than many other countries but it can vary depending on the city and lifestyle."
+      },
+      {
+        "question": "Can I work part-time while studying in Australia?",
+        "answer": "Yes, international students are allowed to work part-time up to 20 hours per week during their studies."
+      },
+      {
+        "question": "What are the job opportunities for international students in Australia?",
+        "answer": "Australia offers post-study work visa options, allowing graduates to gain work experience in their field of study."
+      },
+      {
+        "question": "What is the climate like in Australia?",
+        "answer": "Australia has a diverse climate, ranging from tropical to temperate."
+      }
+    ],
+    "expertNumber": "+447903108549",
+    "url": "study-in-the-australia",
+    "meta": "Australia is one of the top destinations for international students. It is famous for its diverse cultures and high-quality education. Some of the world’s leading universities are in Australia, and they provide world-class opportunities for research, innovation, and careers. With globally recognized degrees and English as the medium of instruction, international students can immerse themselves in a global environment.",
+    "bgColor": "#191F2C"
+  },
+
+  {
+    "destinationName": "india",
+    "destinationFlag": "/assets/Homepage/choose-your-destination/Flags/Australia.webp",
+    "destinationDescription": "Australia is one of the top destinations for international students. It is famous for its diverse cultures and high-quality education. Some of the world’s leading universities are in Australia, and they provide world-class opportunities for research, innovation, and careers. With globally recognized degrees and English as the medium of instruction, international students can immerse themselves in a global environment.",
+    "whyStudyDescription": "Australian universities are renowned for their academic excellence, and their programs are designed to be practical, preparing students for global careers. Australia is a multicultural society where international students can feel safe and foster a sense of belonging. The Australian government offers post-study work visas to students.",
+    "quickFacts": [
+      "Australia hosted approximately 360,000–380,000 international students.",
+      "Australia ranks 3rd globally in hosting international students (after the United States and the United Kingdom).",
+      "About 15–20% of international graduates secure leadership positions within five years of graduation.",
+      "International students contribute approximately AUD $37–40 billion annually to the Australian economy.",
+      "Australia is one of the most unique countries in the world—not only geographically but also culturally. International students are warmly welcomed and might be surprised by: Australians’ direct and straightforward communication style.Their laid-back and casual attitude to life.\n Their love for dry, self-deprecating jokes.\n ",
+      "Their passion for the outdoors, often walking barefoot and enjoying activities like exploring the Great Barrier Reef and national parks.\n Australia also respects and celebrates Indigenous Australian culture."
+    ],
+    "scholarship": [
+      "Australia Awards Scholarships: Fully funded scholarships.",
+      "Endeavour Scholarships and Fellowships: For international students undertaking research or professional development.",
+      "University-Specific Scholarships: Merit-based scholarships that can cover tuition fees or provide financial assistance.",
+      "Australia for ASEAN Scholarships.",
+      "Deakin Vice-Chancellor’s International Scholarship.",
+      "Curtin University Alumni and Family Scholarship.",
+      "University of New South Wales International Scholarships.",
+      "Charles Darwin University International Scholarships.",
+      "Griffith University International Scholarships."
+    ],
+    "programDuration": [
+      {
+        "qualification": "Bachelor's Degree",
+        "duration": "3-4 years",
+        "gir": "N/A"
+      },
+      {
+        "qualification": "Master's Degree",
+        "duration": "1-2 years",
+        "gir": "N/A"
+      },
+      {
+        "qualification": "Doctoral Degree (PhD)",
+        "duration": "3-4 years",
+        "gir": "N/A"
+      }
+    ],
+    "postGraduationOpportunity": [
+      {
+        "qualification": "Diploma ",
+        "duration": "Up to 18 months."
+      },
+      {
+        "qualification": "Master's by Coursework ",
+        "duration": "Up to 2 years."
+      },
+      {
+        "qualification": "Master's by Research or Doctorate",
+        "duration": "Up to 3 or 4 years."
+      }
+    ],
+    "costOfStudy": [
+      { "degree": "Accommodation", "cost": "AUD 500 to AUD 1,200 per month" },
+      { "degree": "Food", "cost": "AUD 300 to AUD 600 per month" },
+      { "degree": "Transportation", "cost": "AUD 100 to AUD 200 per month" },
+      {
+        "degree": "Utilities and Internet",
+        "cost": "AUD 150 to AUD 250 per month"
+      }
+    ],
+    "academicIntake": [
+      {
+        "qualification": "Summer Intake",
+        "duration": "February , July"
+      }
+    ],
+    "preparationTime": "September and November for the February intake and March and May for the July intake.",
+    "popularIn": [
+      "Business and Management",
+      "Engineering",
+      "Information Technology",
+      "Health Sciences",
+      "Arts and Humanities"
+    ],
+    "studyRequirement": [
+      {
+        "title": "To study in Australia, international students must obtain a Student Visa (subclass 500)",
+        "description": "Key requirements include: ● Enrollment in a course at an Australian institution.\n● Proof of sufficient funds.\n● Overseas Student Health Cover (OSHC) for health insurance coverage.\n● Minimum IELTS or TOEFL scores to prove English language proficiency.",
+        "img": "/assets/UK Page/4. Requirements Section/49 a 1-1-min.png"
+      }
+    ],
+    "examRequirement": [
+      {
+        "examName": "For Visa purposes ",
+        "requirementList": [
+          "Major test results accepted by the Australian Department of Immigration and Citizenship (DIAC) for visa purposes are IELTS, TOEFL, CAE and PTE."
+        ]
+      }
+    ],
+    "documents": {
+      "description": "Documents Required to Study in Australia for International Students.",
+      "list": [
+        "Passport",
+        "Academic Transcripts",
+        "Proof of Financial Capacity",
+        "Health Insurance",
+        "Letter of Offer from a University",
+        "Visa Application Form"
+      ]
+    },
+    "statement": {
+      "description": "Provide a compelling statement of purpose.",
+      "list": [
+        "Academic Transcripts",
+        "Passport",
+        "Proof of Financial Capacity",
+        "Health Insurance",
+        "Letter of Offer from a University",
+        "Visa Application Form"
+      ]
+    },
+    "application": {
+      "description": "Requirement for an Australia student visa",
+      "list": [
+        "Proof of enrolment (your electronic confirmation of enrolment eCOE)",
+        "A valid passport.",
+        "Your visa application fee.",
+        "You are required to meet Genuine Student Criteria",
+        "Academic and work experience documents",
+        "Evidence of your English proficiency skills (such as IELTS test scores)",
+        "Evidence of financial ability (tuition fees, living expenses, expenses for dependents, return airfare)",
+        "Details of your health insurance policy (OSHC)",
+        "Passport-size photographs"
+      ]
+    },
+    "faq": [
+      {
+        "question": "Is Australia a good place to study for international students?",
+        "answer": "Yes, Australia offers a high-quality education system, diverse culture, and beautiful landscapes for international students."
+      },
+      {
+        "question": "What is the cost of living in Australia for students?",
+        "answer": "The cost of living in Australia is generally higher than many other countries but it can vary depending on the city and lifestyle."
+      },
+      {
+        "question": "Can I work part-time while studying in Australia?",
+        "answer": "Yes, international students are allowed to work part-time up to 20 hours per week during their studies."
+      },
+      {
+        "question": "What are the job opportunities for international students in Australia?",
+        "answer": "Australia offers post-study work visa options, allowing graduates to gain work experience in their field of study."
+      },
+      {
+        "question": "What is the climate like in Australia?",
+        "answer": "Australia has a diverse climate, ranging from tropical to temperate."
+      }
+    ],
+    "expertNumber": "+447903108549",
+    "url": "study-in-the-australia",
+    "meta": "Australia is one of the top destinations for international students. It is famous for its diverse cultures and high-quality education. Some of the world’s leading universities are in Australia, and they provide world-class opportunities for research, innovation, and careers. With globally recognized degrees and English as the medium of instruction, international students can immerse themselves in a global environment.",
+    "bgColor": "#191F2C"
+  },
+
+  {
     "destinationName": "Switzerland",
     "destinationFlag": "/assets/Homepage/choose-your-destination/Flags/Switzerland-Flag.webp",
     "destinationDescription": "Here’s a comprehensive guide for all students who want to study in Switzerland",

@@ -76,4 +76,14 @@ export interface Destination {
   _id: string;
 }
 
+export interface ShowToggleButtonProps {
+  showAll: boolean;
+  toggleShowAll: () => void;
+  countriesCount: number;
+}
 
+export interface DisplayCountriesProps {
+  countries: Destination[];
+  loading: boolean;
+  error: string | null;
+}
